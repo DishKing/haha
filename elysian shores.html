@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysian Shores - Luxury Resort</title>
+    <style>
+        @import url("https://www.w3schools.com/w3css/4/w3.css");
+
+        :root {
+            --primary-color: #1e272e;
+            --secondary-color: #485460;
+            --text-color: #d2dae2;
+            --accent-color: #ff9f1a;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('resort.jpg') no-repeat fixed center center/cover;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+
+        .hero {
+            background: blur(10px);
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: auto;
+            margin: 20px;
+            padding: 40px;
+            background: rgba(30, 39, 46, 0.24); /* Slight tint */
+            backdrop-filter: blur(5px); /* Blur effect */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section {
+            flex: 1 1 calc(50% - 20px); /* Adjust the width of each section */
+            padding: 20px;
+            background: rgba(37, 43, 49, 0.7); /* Slight tint */
+            margin: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                flex: 1 1 100%; /* Full width on smaller screens */
+            }
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+        }
+
+        .about-container {
+            margin: 20px;
+            padding: 40px;
+            background: rgba(30, 39, 46, 0.24); /* Slight tint */
+            backdrop-filter: blur(5px); /* Blur effect */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        footer {
+            background: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: auto;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #ffa502;
+        }
+
+        .header {
+            position: sticky;
+            top: 10px;
+            width: auto;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+            z-index: 1000;
+        }
+
+        .header:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <div class="header w3-animate-top">
+        Elysian Shores - Paradise on earth
+    </div>
+    <div class="hero w3-animate-bottom">
+        Where luxury meets nature
+    </div>
+    <div class="about-container w3-animate-left">
+        <div class="">
+            <h2>About Elysian Shores</h2>
+            <p>Elysian Shores is a luxurious resort on the Gulf of Valencia, inspired by Greek mythology’s Elysium. It features modern villas amid lush tropical gardens with stunning coastal views. Guests can unwind in infinity pools, enjoy spa treatments with natural ingredients, and savor fresh, ocean-inspired cuisine.   
+
+ 
+
+                Surrounded by golden beaches, cliffs, and forests, the resort offers activities like snorkeling, hiking, and ziplining, along with breathtaking sunset views. Easily accessible via international airport, private marina, and high-speed rail, it ensures a seamless journey.   
+                
+                 
+                
+                Committed to sustainability, Elysian Shores uses solar energy, water conservation, and organic gardens. Accommodations range from ocean-view villas to eco-lodges, blending luxury with nature for the perfect getaway. </p>
+        </div>
+    </div>
+    <div class="container w3-animate-left">
+        <div class="section">
+            <h2>Relax & Indulge</h2>
+            <p>Unwind in infinity pools, enjoy spa treatments with natural ingredients, and savor fresh, ocean-inspired cuisine.</p>
+            <a href="#" class="btn">Explore More</a>
+        </div>
+        <div class="section">
+            <h2>Adventure Awaits</h2>
+            <p>Explore golden beaches, cliffs, and forests with activities like snorkeling, hiking, and ziplining, all with breathtaking sunset views.</p>
+            <a href="#" class="btn">Discover Activities</a>
+        </div>
+        <div class="section">
+            <h2>Eco-Friendly Luxury</h2>
+            <p>We are committed to sustainability with solar energy, water conservation, and organic gardens, offering a perfect blend of luxury and nature.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Elysian Shores. All Rights Reserved.
+    </footer>
+</body>
+</html>
